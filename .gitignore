@@ -29,6 +29,6 @@ node_modules
 .lock-wscript
 
 bower_components
-src/dist
+
 
 .idea/

@@ -1,6 +1,6 @@
 import React from 'react'
-import locationActions from './actions/LocationActions'
-import locationStore from './stores/LocationStore'
+import locationActions from '../actions/LocationActions'
+import locationStore from '../stores/LocationStore'
 
 
 export default React.createClass({
@@ -25,7 +25,7 @@ export default React.createClass({
         locationActions.updateLocation([event.target.value, this.state.country])
     },
 
-      _countryChanged(event) {
+     _countryChanged(event) {
         locationActions.updateLocation([this.state.city, event.target.value])
     },
 
