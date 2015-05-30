@@ -9,5 +9,5 @@ To run:
 npm install
 npm start (This will start a server on port 8080 with hot reload)
 npm run build:development (This will build your project in the build directory, you can run python -m SimpleHTTPServer to see the result)
-npm run build:development (This will minify your project in the build directory, you can run python -m SimpleHTTPServer to see the result)
+npm run build:production (This will minify your project in the build directory, you can run python -m SimpleHTTPServer to see the result)
 ```
