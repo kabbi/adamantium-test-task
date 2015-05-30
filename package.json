@@ -1,5 +1,5 @@
 {
-  "name": "webpack-es6-react-boilerplate",
+  "name": "simple-react-webpack-es6-alt",
   "version": "1.0.0",
   "description": "a sample app in es6 making use of webpack, react, bower, alt",
   "scripts": {
@@ -27,10 +27,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lalitkapoor/webpack-es6-react-boilerplate.git"
+    "url": "git@github.com:benoss/simple-react-webpack-es6-alt.git"
   },
-  "homepage": "https://github.com/mbrio/react-boilerplate",
-  "bugs": "https://github.com/mbrio/react-boilerplate/issues",
+  "homepage": "https://github.com/benoss/simple-react-webpack-es6-alt",
+  "bugs": "https://github.com/benoss/simple-react-webpack-es6-alt/issues",
   "dependencies": {
     "alt": "^0.16.7",
     "bootstrap": "^3.3.4",
