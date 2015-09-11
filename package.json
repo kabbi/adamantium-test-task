@@ -1,16 +1,17 @@
 {
-  "name": "simple-react-webpack-es6-alt",
+  "name": "adamantium-test-task",
   "version": "1.0.0",
-  "description": "a sample app in es6 making use of webpack, react, bower, alt",
+  "description": "Simple instagram trends viewer. With graphs!",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf -rf build",
     "build:development": "webpack --config ./config/webpack.development.js",
     "build:production": "webpack --config ./config/webpack.production.js",
     "build": "npm run build:development",
-    "start": "webpack-dev-server  --devtool eval --progress --colors --hot  --config ./config/webpack.hot.js"
+    "start": "webpack-dev-server  --devtool eval --progress --colors --hot --config ./config/webpack.hot.js"
   },
   "keywords": [
+    "instagram",
     "webpack",
     "react",
     "reactjs",
@@ -21,18 +22,15 @@
     "es6"
   ],
   "author": {
-    "name": "Benoit Chabord"
+    "name": "Dmitry Kabak"
   },
-  "contributors": [],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:benoss/simple-react-webpack-es6-alt.git"
+    "url": "git@github.com:kabbi/adamantium-test-task.git"
   },
-  "homepage": "https://github.com/benoss/simple-react-webpack-es6-alt",
-  "bugs": "https://github.com/benoss/simple-react-webpack-es6-alt/issues",
+  "homepage": "https://github.com/kabbi/adamantium-test-task",
   "dependencies": {
-    "alt": "^0.16.7",
     "bootstrap": "^3.3.4",
     "react": "^0.13.3",
     "react-bootstrap": "^0.23.0",
@@ -46,7 +44,7 @@
     "classnames": "^2.1.2",
     "less": "^2.5.1",
     "less-loader": "^2.2.0",
-    "css-loader": "^0.14.4",
+    "css-loader": "^0.18.0",
     "style-loader": "^0.12.3",
     "extract-text-webpack-plugin": "^0.8.1",
     "file-loader": "^0.8.4",

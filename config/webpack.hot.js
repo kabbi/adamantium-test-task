@@ -11,7 +11,6 @@ webpackConfig.output.sourceMapFilename= 'debugging/[file].map';
 webpackConfig.output.hotUpdateChunkFilename= 'hot/[id].[hash].hot-update.js';
 webpackConfig.output.hotUpdateMainFilename= 'hot/[hash].hot-update.json';
 
-
 webpackConfig.plugins = [
   new webpack.DefinePlugin({
     NODE_ENV: JSON.stringify('development')

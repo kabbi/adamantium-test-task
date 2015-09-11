@@ -12,8 +12,7 @@ module.exports = {
     app: [
       './src/init',
       './src/init.less',
-      './src/index.html',
-      './src/favicon.ico'
+      './src/index.html'
     ]
   },
   output: {
@@ -34,7 +33,6 @@ module.exports = {
       { test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader")},
-      //{ test: /\.less$/, loader: "style!css!less"},
       { test: /\.less$/, loader: ExtractTextPlugin.extract("style-loader", "css!less")},
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
@@ -53,8 +51,8 @@ module.exports = {
       NODE_ENV: JSON.stringify('production')
     }),
     new ExtractTextPlugin("style.css", {
-            allChunks: true
-        }),
+      allChunks: true
+    }),
     //new webpack.optimize.UglifyJsPlugin({minimize: true})
   ]
 };
