@@ -19,6 +19,6 @@ webpackConfig.plugins = [
   new ExtractTextPlugin("style.css"),
 ];
 
-webpackConfig.module.loaders[0] = { test: /\.jsx$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader'] };
+webpackConfig.module.loaders[0] = { test: /\.jsx$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader?optional[]=runtime&stage=0'] };
 
 module.exports = webpackConfig;

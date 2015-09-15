@@ -1,7 +1,6 @@
-import React from 'react'
-import nav from "react-router-bootstrap"
+import React from 'react';
 
-export default React.createClass({
+export default class AboutPage extends React.Component {
     render() {
         return (
             <div>
@@ -10,4 +9,4 @@ export default React.createClass({
             </div>
         )
     }
-})
+}

@@ -12,8 +12,4 @@ webpackConfig.plugins = [
   new ExtractTextPlugin("style.css"),
 ];
 
-webpackConfig.module.preLoaders = [
-  { test: /\.jsx$/, exclude: /node_modules/, loader: 'jsxhint' },
-];
-
 module.exports = webpackConfig;

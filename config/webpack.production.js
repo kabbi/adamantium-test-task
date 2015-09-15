@@ -30,9 +30,9 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader")},
+      { test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader?optional[]=runtime&stage=0' },
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?optional[]=runtime&stage=0' },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
       { test: /\.less$/, loader: ExtractTextPlugin.extract("style-loader", "css!less")},
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
@@ -49,6 +49,9 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify('production')
+    }),
+    new webpack.ProvidePlugin({
+      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     }),
     new ExtractTextPlugin("style.css", {
       allChunks: true
