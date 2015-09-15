@@ -1,13 +1,18 @@
-simple-react-webpack-es6-alt
+Test task
 =========
-A boilerplate app in es6 making use of webpack, react, bower, alt, bootstrap, react router, react bootstrap router.
-Supports webpack's hot reload for react.
+Simple react app, showing popular instagram posts along with cute comments and likes graph.
 
-To run:
+To run with development setup (hot-reload server on :8080):
 
 ```bash
 npm install
-npm start (This will start a server on port 8080 with hot reload)
-npm run build:development (This will build your project in the build directory, you can run python -m SimpleHTTPServer to see the result)
-npm run build:production (This will minify your project in the build directory, you can run python -m SimpleHTTPServer to see the result)
+npm start
+```
+
+To use pre-compiled release code:
+
+```bash
+cd build
+# port 8080 is important here, it's used in instagram auth redirect url
+python -m SimpleHTTPServer 8080
 ```
